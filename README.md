@@ -1,4 +1,4 @@
-MIPT2023_NeuralNetworks Course 
+# MIPT2023_NeuralNetworks Course 🌵
 
 Every lesson is represented by:
 - summary powered by .excalidraw for quick illustration  
