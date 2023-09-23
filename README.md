@@ -13,6 +13,6 @@ Tasks table:
 
 | Lesson Number | Title | Seminar Abstract | Seminar | Homework |
 |---------------|-------|----------|----------|---------|
-| 1 | Activation |[Github](lesson1/sem1.md) | [Github](lesson1/sem1.md)| [link](lesson1/hw_1.ipynb) |
-| 2 |   | [link](lesson2/sem2.md) | [link](lesson1/sem1.md)| [link](lesson1/hw_1.ipynb) |
+| 1 | Activation.  |[Github](lesson1/sem1.md) | [Github](lesson1/sem1.md)| [link](lesson1/hw_1.ipynb) |
+| 2 | Optimization methods. Batch Normalization. Convolution networks | [Github](lesson2/sem2.md) | [Github](lesson1/sem1.md)| [Github](lesson1/hw_2.ipynb) |
 
