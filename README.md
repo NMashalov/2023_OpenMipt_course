@@ -25,10 +25,10 @@ Tasks table:
 | 1 | Activation.  |[Github](lesson1/sem1.md) | 
 | 2 | Optimization methods. Batch Normalization. Convolution networks | [Github](lesson2/sem2.md) |
 | 3 | Transfer learning. Segmentation | [Github](lesson3/sem3.md) |
-| 4 | Recurrent neural nets. LSTM | [Github](lesson3/sem3.md) |
-| 5 | Bonus lesson | [Github](lesson3/sem3.md) |
-| 6 | Model ensemble. Random forest | [Github](lesson3/sem3.md) |
-| 7 | Boosting | [Github](lesson3/sem3.md) |
+| 4 | Recurrent neural nets. LSTM | [Github](lesson4/sem4.md) |
+| 5 | Bonus lesson | No abstract |
+| 6 | Model ensemble. Random forest | [Github](lesson6/sem6.md) |
+| 7 | Boosting | [Github](lesson7/sem7.md) |
 
 
 
