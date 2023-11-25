@@ -150,5 +150,71 @@ a_R = ER \approx \frac{a_1 - a_2}{a_2} \\
 $$
 
 
+## Unparamertic Tests
 
+$X=(X_1,\dots, X_n)$ and $Y=(Y_1,\dots, Y_n)$ are sets from continous probability distributions with cumulative probability distribution $F$ and $G$ respectively
+
+$H_0: F=G$
+
+vs
+
+
+$$
+\begin{cases}
+    H_1: F \ne G - hypothesis of not hom\\  
+    H_2: F \ge G  - hypothesis of dominance
+    H_3: F(x-\theta)=G(x)- hypothesis of shift
+\end{cases}
+$$
+
+Independent 
+
+### Smirnov criterion
+
+$H_0: F=G$ vs $H_1: F\ne G$
+
+$$
+    D_{nm} = \sup\limits_{x\in \mathbf{R}} |\hat{F}_n(x) -\hat{G}_m(x)
+$$
+
+## Kolmogorov criterion
+
+$$
+    \sqrt{\frac{nm}{n+m}} D_nm \rightarrow Kolmogorov
+    
+$$
+
+## Welcon-Mann-Witney criterion
+
+$$
+    H_0: F=G vs H_1: F \ge G 
+$$
+
+$(X_1,\dots,X_n,Y_1,\dots,Y_n)$ - variation series
+
+$S_j$ - rank $Y_j$ in variation series
+
+Stastic $V=s_1+\dots+s_n$
+
+$$
+    \frac{V`-\mathbf{E}V}{\sqrt{DV}} \rightarrow^{d_0} \mathbf{N}(0,1)
+$$
+,where 
+$$
+    EV = \frac{m(n+m+1)}{2}, DV = \frac{nm(n+m+1)}{12}
+$$
+
+With assumption:
+
+$$
+    F(x-\theta) \approx G(x)
+$$
+
+We can estimate shift $\theta$ with:
+
+$$
+    \hat{\theta}=med\{W_{ij} =Y_j-X_i\,i=1,\dots,n,j=1,\dots,m\} 
+$$
+
+Asymptotic normal estimation with $\sigma = \sqrt{12} \int p^2(x) dx$
 
