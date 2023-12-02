@@ -210,6 +210,8 @@ $$
     F(x-\theta) \approx G(x)
 $$
 
+## Shift estimation
+
 We can estimate shift $\theta$ with:
 
 $$
