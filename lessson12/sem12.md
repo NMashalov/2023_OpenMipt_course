@@ -152,7 +152,7 @@ Sampling methods:
 $$
     p(x_k) = p(x_k| x_k \in k) p(k)
 $$
-
+Cases:
 1. Stratified sampling +  stratified mean
 
 $$
