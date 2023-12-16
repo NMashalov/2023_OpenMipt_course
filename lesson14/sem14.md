@@ -150,7 +150,7 @@ $$
 
 So 
 $$
-    p(Y=y|X=x) = \int 
+    p(Y=y|X=x) = \int p(z)p(y|x,z) dz
 $$
 
 Algorithm $(X \rightarrow Y)$
@@ -161,10 +161,68 @@ Algorithm $(X \rightarrow Y)$
 |----|----------|--|
 |Low pressure|$\frac{81}{87}=93\%$|$\frac{234}{270}=87\%$|
 |High pressure|$\frac{192}{263}=73\%$|$\frac{55}{80}=69\%$|
-|All||
+|All|$\frac{273}{350}=78\%$|$\frac{289}{350}=83\%$|
 
 1. Pressure was measured before medicine and consequent on treatment.
 
 ```mermaid
-
+graph TD;
+    X --> T
+    T --> Y
+    X --> Y
 ```
+
+Intervention $T =t$, $t\in \{0,1\}$:
+
+1. $T=1$, $y=c_1$
+
+$$
+    \mathrm{E}C_1 =\mathrm{E}^*_{T=1}y=\mathrm{E}(Y|T=1) 
+$$
+2.$T=1$, $y=c_0$
+
+$$
+    \mathrm{E}C_0 = \mathrm{E}(Y|T=0) 
+$$
+
+
+$$
+    ATE = \mathrm{E}(C_1-C_0) = \mathrm{E}(Y|T=1) - \mathrm{E}(Y|T=0) = P(Y|T=1) - P(Y|T=0)
+$$
+
+
+$$
+    p^*(x,y)= p(x)p(y|x,t)
+$$
+
+$$
+    p(Y=y|T=t) = \sum\limits_x p(x) p(y|x,t)
+$$
+
+$$
+    p(Y=1|T=1) = \sum\limits_{x=0}^1 P(X=x)P(Y=1|X=x,T=1)
+$$
+
+2. Now treatmeant affect pressure
+
+```mermaid
+graph TD;
+    X --> Y
+    T --> X
+    T --> Y
+```
+
+$$
+    p^*(x,y)= p(x|t)p(y|x,t)
+$$
+
+$$
+    p(Y=y|T=t) = \sum_x p(x|t) p(y|x,t)
+$$
+
+
+$$
+    p(y=1|T=1) = \sum\limits_{x=0}^1 P(x=x|T=1) P(y=1|X=x,T=1)
+$$
+
+$DoWhy$ - microsoft library for casual inference
