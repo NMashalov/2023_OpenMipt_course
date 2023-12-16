@@ -150,3 +150,5 @@ Estimate of probability:
 $$
 P(x)=P(T=1|X=x)
 $$
+
+![](imgs/causality.excalidraw.png)
