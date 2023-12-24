@@ -161,7 +161,7 @@ $$
     \sum_{k=1}^K \omega_k^2 \frac{1}{n \omega_k} \sigma_k^2 =\frac{1}{n} \sum_{k=1}^K \omega_k \sigma_k^2 
 $$
 
-1. Random sampling + random mean
+2. Random sampling + random mean
 
 During derivation we'll use [Law of total variance](https://ru.wikibrief.org/wiki/Law_of_total_variance)
 

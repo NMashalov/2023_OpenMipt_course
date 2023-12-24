@@ -225,4 +225,4 @@ $$
     p(y=1|T=1) = \sum\limits_{x=0}^1 P(x=x|T=1) P(y=1|X=x,T=1)
 $$
 
-$DoWhy$ - microsoft library for casual inference
+$DoWhy$ - microsoft library for casual inference.
